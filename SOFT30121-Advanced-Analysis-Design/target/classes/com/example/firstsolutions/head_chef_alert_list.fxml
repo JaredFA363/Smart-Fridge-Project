@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstsolutions.Controller.HeadChefController.HeadChef_AlertList">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Alerts" />
+
+
+    <HBox spacing="10.0">
+        <Label fx:id="usernameField" style="-fx-font-size: 18; -fx-font-weight: normal;" text="Name" underline="true" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button mnemonicParsing="false" onAction="#OnBackButtonClick" text="Back" />
+    </HBox>
+
+    <TableView fx:id="alertsTableView" prefHeight="300.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="alertID" prefWidth="250.0" text="Alert Id" />
+            <TableColumn fx:id="alertTitle" prefWidth="250.0" text="Title" />
+            <TableColumn fx:id="alertMessage" prefWidth="250.0" text="Message" />
+        </columns>
+        <contextMenu>
+            <ContextMenu>
+                <items>
+                    <MenuItem text="Delete" onAction="#onDeleteMenuItemClick" fx:id="removeItemButton" />
+                </items>
+            </ContextMenu>
+        </contextMenu>
+    </TableView>
+</VBox>

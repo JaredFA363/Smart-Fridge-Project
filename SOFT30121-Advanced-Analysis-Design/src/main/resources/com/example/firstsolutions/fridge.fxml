@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextInputDialog?>
+
+<VBox alignment="TOP_CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstsolutions.Controller.FridgeController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Fridge Contents" />
+
+    <HBox spacing="10.0">
+        <Label fx:id="usernameField" style="-fx-font-size: 18; -fx-font-weight: normal;" text="Name" underline="true" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button mnemonicParsing="false" onAction="#OnBackButtonClick" text="Back" />
+    </HBox>
+
+    <VBox alignment="CENTER" fillWidth="false" minHeight="200.0" minWidth="100.0" spacing="10.0">
+        <TableView fx:id="FridgeTableView" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="itemIDColumn" prefWidth="100.0" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="100.0" text="Name" />
+                <TableColumn fx:id="quantityColumn" prefWidth="200.0" text="Quantity" />
+                <TableColumn fx:id="expirydateColumn" prefWidth="100.0" text="Expiry Date" />
+            </columns>
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem text="Delete" onAction="#onDeleteMenuItemClick" fx:id="removeItemButton" />
+                        <MenuItem text="Remove Quantity" onAction="#onRemoveQuantityMenuItemClick" fx:id="removeQuantityButton" />
+                        <MenuItem text="Insert Quantity" onAction="#onInsertQuantityMenuItemClick" fx:id="insertQuantityButton" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </TableView>
+    </VBox>
+
+    <VBox spacing="10.0">
+        <Button mnemonicParsing="false" onAction="#onAddItemClick" fx:id="addItemButton" text="Add Item" />
+    </VBox>
+
+</VBox>

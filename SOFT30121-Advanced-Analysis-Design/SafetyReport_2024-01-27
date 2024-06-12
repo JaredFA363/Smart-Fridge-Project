@@ -1,0 +1,34 @@
+The following report provides an overview of the inventory status and activities related to the FFSmart Fridge:
+
+Inventory Overview:
+Total Quantity of Items in the Fridge: 16
+Number of Items near Expiry: 14
+
+Items Approaching Expiry:
+Expiry Date within 3 days: Eggs - Date: 28/01/2024 - Quantity: 7
+Expiry Date within 3 days: Red Bell Peppers - Date: 28/01/2024 - Quantity: 7
+
+Total Activity:
+Message: User has added an item to the fridge - item: Bread - quantity: 5 - by: deliverytest - Delivery
+Message: User has inserted a specific item quantity to the fridge - item: Eggs - quantity: 7 - by: deliverytest - Delivery
+Message: User has delete an item from the fridge - item: Bread - quantity: 5 - by: test - Head Chef
+
+Recent Alert History:
+Alert: Expiry Date within 3 days: Eggs - Date: 28/01/2024
+Alert: Expiry Date within 3 days: Bread - Date: 26/01/2024
+Alert: Expiry Date within 3 days: Eggs - Date: 28/01/2024
+Alert: Expiry Date within 3 days: Red Bell Peppers - Date: 28/01/2024
+Alert: Expiry Date within 3 days: Red Bell Peppers - Date: 28/01/2024
+Alert: Expiry Date within 3 days: Red Bell Peppers - Date: 28/01/2024
+Alert: Low stock on: Bread - Stock: 2
+Alert: Low stock on: Bread - Stock: 2
+Alert: Expiry Date within 3 days: Bread - Date: 26/01/2024
+Alert: Expiry Date within 3 days: Red Bell Peppers - Date: 28/01/2024
+
+To comply with Food laws we:
+- Regularly check items nearing expiry and take necessary actions.
+- Ensure accurate inventory levels through periodic audits.
+- Train staff on proper handling and storage of food items.
+- Regularly review access controls to prevent unauthorized access.
+
+Generated on: 2024-01-27 12:56:58

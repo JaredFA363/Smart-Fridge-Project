@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.firstsolutions.Controller.AddItemDialogController">
+    <GridPane hgap="10" vgap="10">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20" />
+        </padding>
+
+        <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+        <Label text="Quantity:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="quantityField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+        <Label text="Expiry Date:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="expiryDateField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <Button text="Add" onAction="#onAddButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2" />
+    </GridPane>
+</AnchorPane>
+

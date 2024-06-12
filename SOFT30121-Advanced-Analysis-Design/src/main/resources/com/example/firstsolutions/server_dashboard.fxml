@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstsolutions.Controller.ServerController.Server_Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Server Dashboard" />
+
+    <HBox spacing="10.0">
+        <Label fx:id="usernameField" style="-fx-font-size: 18; -fx-font-weight: normal;" text="Name" underline="true" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button mnemonicParsing="false" onAction="#onLogoutButtonClick" text="Sign Out" />
+        <Button mnemonicParsing="false" text="User" />
+    </HBox>
+
+    <VBox alignment="CENTER" fillWidth="false" minHeight="200.0" minWidth="100.0" spacing="10.0">
+        <Button mnemonicParsing="false" prefWidth="300" style="-fx-font-size: 18;" onAction="#onFridgeButtonClicked" text="Fridge" />
+    </VBox>
+
+</VBox>

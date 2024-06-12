@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstsolutions.Controller.HeadChefController.HeadChef_Roles">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Configure" />
+
+    <HBox spacing="10.0">
+        <Label fx:id="usernameField" style="-fx-font-size: 18; -fx-font-weight: normal;" text="Name" underline="true" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button mnemonicParsing="false" onAction="#OnBackButtonClick" text="Back" />
+    </HBox>
+
+    <VBox alignment="CENTER" fillWidth="false" minHeight="200.0" minWidth="100.0" spacing="10.0">
+        <TableView fx:id="userTableView" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="userIDColumn" prefWidth="100.0" text="UserID" />
+                <TableColumn fx:id="userColumn" prefWidth="200.0" text="User" />
+                <TableColumn fx:id="roleColumn" prefWidth="100.0" text="Role" />
+                <TableColumn fx:id="deleteColumn" prefWidth="100.0" text="Delete" />
+                <TableColumn fx:id="writeColumn" prefWidth="100.0" text="Write" />
+                <TableColumn fx:id="accessColumn" prefWidth="100.0" text="AccessToFridge" />
+            </columns>
+        </TableView>
+    </VBox>
+</VBox>
